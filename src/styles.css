@@ -1,0 +1,213 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.capitalise {
+  text-transform: capitalize;
+}
+
+router-outlet {
+  display: none;
+}
+
+#overlay {
+  background: #000;
+  opacity: .8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.mainContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+}
+
+.header, .aside, .footer, .main {
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.aside, .footer, .main {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+  color: white;
+}
+
+.headerLink {
+  background: url(/assets/images/cec-logo-mobile.png) no-repeat;
+  background-size: contain;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 74px;
+  display: block;
+}
+
+.aside {
+  background-color: rgb(198, 201, 226);
+  text-align: left;
+  color: #ccc;
+  padding: 0 15px;
+}
+
+.footer {
+  background-color: rgb(198, 201, 226);
+  text-align: left;
+  color: #ccc;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #f37000;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  letter-spacing: 0.2px;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 400;
+  text-shadow: none;
+  box-shadow: none;
+  width: auto;
+  height: 30px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+button:hover {
+  background: #d68742;
+}
+
+.linkText, .linkText:active, .linkText:visited, .linkIcon {
+  color: #2c56a7;
+}
+
+.linkText:hover, .linkIcon:hover {
+  color: #192844;
+}
+
+.linkItem {
+  text-decoration: underline;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fas {
+  text-decoration: none;
+}
+
+.fa-chevron-down, .fa-chevron-up, .fa-times-circle, .fa-pencil-square-o {
+  padding-right: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #efefef;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.moreInfoToggle {
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], input[type=password], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #999;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442;
+}
+
+.alert {
+  margin-top: -10px;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+}
+.alert-danger {
+  background: #F2DEDE;
+  color: #a94442;
+}
+
+.card {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 #cbcbcb;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  position: relative;
+  min-height: 100px;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main {
+    flex: 3;
+  }
+}
+
+@media only screen and (min-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1) {
+  .headerLink {
+    background: url("/assets/images/cec-logo-desktop.png") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "html": {
+        "unformatted": ["a", 'span', 'strong'] // List of tags that should not be reformatted
+    }
+}

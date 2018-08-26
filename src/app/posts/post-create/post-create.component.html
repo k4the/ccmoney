@@ -1,0 +1,15 @@
+<section class="card">
+  <form (submit)="onSavePost(postForm)" #postForm="ngForm">
+    <input type="text" [ngModel]="post?.title" name="title" #title="ngModel" placeholder="Title" required>
+    <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+      Please enter a title
+    </div>
+    <textarea name="post" rows="6" [ngModel]="post?.content" name="content" #content="ngModel" placeholder="Content"
+      required>
+    </textarea>
+    <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
+      Please enter some content
+    </div>
+    <button type="submit" class="primary">Save post</button>
+  </form>
+</section>

@@ -1,0 +1,13 @@
+<div class="card login">
+  <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
+      <input type="email" ngModel name="email" #email="ngModel" placeholder="Please enter your email" required email>
+      <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        Please enter a valid email
+      </div>
+      <input type="password" ngModel name="password" #password="ngModel" placeholder="Please enter a password" required>
+      <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+        Please enter a password
+      </div>
+      <button type="submit" class="primary">Login</button>
+  </form>
+</div>

@@ -1,0 +1,28 @@
+.postHeader {
+  border: 1px solid lightgray;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.postItem.title {
+  flex: 2;
+}
+
+.postItem.link {
+  padding-right: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.fa-pencil-alt {
+  color: green;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+
+

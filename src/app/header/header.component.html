@@ -1,0 +1,13 @@
+<header>
+  <nav>
+    <div class="leftBox">
+      <a class="navItem" routerLink="/">My messages</a>
+      <a class="navItem" routerLink="/create" routerLinkActive="active" *ngIf="isLoggedIn">New Post</a>
+    </div>
+    <div class="rightBox">
+      <a class="navItem" routerLink="/auth/login" routerLinkActive="active" *ngIf="!isLoggedIn">Login</a>
+      <a class="navItem" routerLink="/auth/signup" routerLinkActive="active" *ngIf="!isLoggedIn">Signup</a>
+      <button class="navItem logoutBut" *ngIf="isLoggedIn" (click)="onLogout()">Logout</button>
+    </div>
+  </nav>
+</header>

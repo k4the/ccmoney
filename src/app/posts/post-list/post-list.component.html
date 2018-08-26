@@ -1,0 +1,8 @@
+<div *ngIf="posts && posts.length > 0">
+  <div *ngFor="let post of posts" class="postHeader">
+    <span class="postItem title">{{post.title}}</span>
+    <a class="postItem link" *ngIf="isLoggedIn" [routerLink]="['/edit', post.id]"><i class="fas fa-pencil-alt"></i></a>
+    <a class="postItem link" *ngIf="isLoggedIn" (click)="onDelete(post.id)"><i class="fas fa-trash-alt"></i></a>
+  </div>
+</div>
+<p *ngIf="posts.length === 0">No posts added yet</p>
